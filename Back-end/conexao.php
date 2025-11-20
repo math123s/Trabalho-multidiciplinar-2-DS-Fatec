@@ -4,7 +4,7 @@ $host = "Localhost";
 $usuario = "root";
 $senha = "";
 //colocar aqui o banco de dados dps
-$database = " ";
+$database = "Arquivo.sql";
 
 
 //criacao da conexao do mysql
