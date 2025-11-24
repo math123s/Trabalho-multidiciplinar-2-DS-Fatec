@@ -1,0 +1,191 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: "Poppins", sans-serif; background: #121212; color: #fff; }
+
+:root {
+  --accent: #ffcb05;
+  --accent-dark: #d6a500;
+  --surface: #1e1e2e;
+  --surface-alt: #2c2c3c;
+  --radius: 16px;
+  --gap: 1.5rem;
+}
+
+body {
+  display: flex;
+}
+aside {
+  width: 220px;
+  background: var(--surface);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: fixed;
+  top: 0; bottom: 0; left: 0;
+}
+aside .brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+aside nav a {
+  padding: .8rem;
+  text-align: center;
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  color: #fff;
+  transition: background .3s;
+}
+aside nav a:hover {
+  background: var(--accent);
+  color: #000;
+}
+main {
+  margin-left: 220px;
+  padding: 2rem;
+  flex: 1;
+}
+
+/* Hero */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #ffcb05, #e63946);
+  border-radius: var(--radius);
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -40px; right: -40px;
+  width: 300px; height: 300px;
+  background: url("pokeball.png") no-repeat center/contain;
+  opacity: 0.1;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  max-width: 600px;
+  font-size: 1.2rem;
+  color: #222;
+}
+.hero .btn {
+  margin-top: 1.5rem;
+}
+
+/* Botões */
+.btn {
+  padding: .8rem 1.6rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s;
+  border: none;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #000;
+}
+.btn-primary:hover { background: var(--accent-dark); }
+.btn-ghost {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+.btn-ghost:hover { background: var(--accent); color: #000; }
+
+.pokemon-card {
+  background: var(--surface-alt);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform .3s;
+}
+.pokemon-card:hover { transform: translateY(-6px); }
+.pokemon-card img {
+  width: 120px;
+  margin: 0 auto 1rem;
+}
+
+.type-fire { border: 3px solid #e63946; }
+.type-water { border: 3px solid #457b9d; }
+.type-grass { border: 3px solid #2a9d8f; }
+.type-electric { border: 3px solid #f4d35e; }
+.type-psychic { border: 3px solid #9d4edd; }
+.type-normal { border: 3px solid #adb5bd; }
+
+.battle-arena {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.battle-log {
+  margin-top: 2rem;
+  background: var(--surface-alt);
+  padding: 1rem;
+  border-radius: var(--radius);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+form {
+  background: var(--surface-alt);
+  padding: 2rem;
+  border-radius: var(--radius);
+  display: grid;
+  gap: 1rem;
+}
+.label {
+  font-weight: 600;
+}
+.input {
+  padding: .8rem;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+}
+
+/* Lista treinadores */
+#listaTreinadores {
+  margin-top: 2rem;
+}
+#listaTreinadores li {
+  background: var(--surface-alt);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+/* Barra de HP */
+.hp-bar {
+  width: 100%;
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: .5rem;
+  border: 1px solid #555;
+}
+
+.hp-fill {
+  height: 100%;
+  width: 100%; /* começa cheia */
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  transition: width 0.6s ease;
+}
