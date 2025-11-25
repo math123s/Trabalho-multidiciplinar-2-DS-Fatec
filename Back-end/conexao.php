@@ -1,18 +1,14 @@
 <?php
+	$host = "localhost"; // endereço do servidor
+	$usuario = "root"; // usuário do MySQL
+	$senha = ""; // senha do MySQL
+	$database = "empresa"; // nome do banco de dados
 
-$host = "Localhost";
-$usuario = "root";
-$senha = "";
-//colocar aqui o banco de dados dps
-$database = "Arquivo.sql";
-
-
-//criacao da conexao do mysql
-//pedir opinião e terminar
-$connection = new mysqli();
-
-if($connection->connect_error) {
-    die("conexão falhou: " . $connection-connect_error);
-}
-
+	// Cria a conexão
+	$connection = new mysqli($host, $usuario, $senha, $database);
+	
+	// Checa se a conexão foi realizada com sucesso
+	if ($connection->connect_error) {
+	    die("Falha de conexão: " . $connection->connect_error);
+	}
 ?>

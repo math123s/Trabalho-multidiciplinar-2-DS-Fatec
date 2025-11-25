@@ -2,7 +2,7 @@
 	include 'cors.php';
 	include 'conexao.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "DELETE") {
+if ($_SERVER["REQUEST_METHOD"] == "CREATE") {
     // Obtém o corpo da solicitação POST
     $data = file_get_contents("php://input");
 
@@ -13,11 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "DELETE") {
     $codigo = $requestData->CodFun;
 
 	// CodFun é o nome da coluna que está sendo enviado pelo cliente
-	$sql = "DELETE FROM Funcionarios WHERE CodFun='$codigo'";
+    //cria o POST
+	$sql = "CREATE FROM Funcionarios WHERE CodFun='$codigo'";
 
     if ($connection->query($sql) === true) {
         $response = [
-            'mensagem' => 'Registro apagado com sucesso!'
+            //aviso de criação
+            'mensagem' => 'Registro Criado com sucesso!'
         ];
     } else {
         $response = [
