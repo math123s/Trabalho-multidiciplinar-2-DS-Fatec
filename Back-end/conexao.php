@@ -2,7 +2,7 @@
 	$host = "localhost"; // endereço do servidor
 	$usuario = "root"; // usuário do MySQL
 	$senha = ""; // senha do MySQL
-	$database = "empresa"; // nome do banco de dados
+	$database = "banco_de_dados.sql"; // nome do banco de dados
 
 	// Cria a conexão
 	$connection = new mysqli($host, $usuario, $senha, $database);
