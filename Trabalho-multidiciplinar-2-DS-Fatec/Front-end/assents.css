@@ -1,0 +1,17 @@
+body{
+    background-image: url("Imagens/Captura\ de\ tela\ 2025-12-02\ 153940.png");
+width: 1240px;
+height: 560px;
+}
+
+.nav{
+    margin: 10px;
+    background-color: #140C36;
+    width: 231px;
+    height: 53px;
+    border-radius: 90px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
