@@ -1,0 +1,86 @@
+/* Fundo da página */
+body {
+    background-image: url("Imagens/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+.back{
+    background-color:#140C36;
+    border-radius: 80px;
+    height: 46px;
+}
+.back2{
+    background-color:#140C36;
+    border-radius: 80px;
+    height: 39px;
+    align-items: center;
+    justify-content: center;
+}
+/* NAVBAR */
+.custom-nav {
+    padding: 12px 20px;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+/* Botões da navbar */
+.btn-nav {
+    background-color: #18113a;
+    color: white;
+    border-radius: 50px;
+    padding: 6px 18px;
+justify-content: center;
+}
+
+.btn-nav:hover {
+    background-color: #1c1549;
+    color: #fff;
+}
+
+/* Botão Login */
+.btn-login {
+    background-color: rgb(31, 17, 75);
+    color: white;
+    border-radius: 50px;
+    padding: 6px 20px;
+    
+}
+
+.btn-login:hover {
+    background-color:#221a58;        
+}
+
+/* Logo */
+.logo-img {
+    width: 45px;
+    height: auto;
+    border-radius: 90px
+}
+
+/*texto do meio*/
+.center-content {
+    max-width: 600px;
+    margin: 130px auto;
+}
+
+.texto-principal {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Botão Continuar */
+.btn-continuar {
+    margin-top: 20px;
+    background-color: #18113a;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.btn-continuar:hover {
+    background-color: #1c1549;
+}
