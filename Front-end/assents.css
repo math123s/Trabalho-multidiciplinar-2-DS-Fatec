@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: boreder-box;
+    
+    font-family: Arial, sans-serif;
+}
+
+body{
+    /*o funco faz uma linha gradiente ou seja */
+    background-color: linear-gradient(135deg, #10066a, #02051a);
+    width: 100%;
+    height: 100vh;
+    /*controla oque acontece quando o conteudo
+    do elemento é maior do que ele*/
+    overflow: hidden;
+    color: #10066a;
+}
+
+
+/*Para a NAV-BAR*/
+header{
+    width: 100%;
+    padding:20px 40px;
+    /*Deixa o header flexivel*/
+    display: flex;
+    /*Coloca o conteudo no final*/
+    justify-content: flex-end;
+}
+
+/*Botão do nav-bar*/
+.btn-nav{
+
+    background: #402c63;
+    /*Espaçamento entre os botões*/
+    padding: 10px 25px;
+    /*Deixa os botões circulares*/
+    border-radius: 20px;
+    color: #fff;
+    margin-left: 20px;
+    /*Tira a  decoração do texto*/
+    text-decoration: none;
+    /*largura da font*/
+    font-weight: 600;
+    /*transicao*/
+    transition: 0.3s;
+} 
+
+.btn0nav:hover{
+    background: #5b3d94;
+}
+
+/*Container Principal*/
+    .container{
+        position: absolute;
+        top: 80px;
+        left: 60px;
+        width: 350px;
+    }
+    
+    .container h1{
+        /*Tamanho da fonte*/
+        font-size: 28px;
+        /*margin*/
+        margin-bottom:20px;
+    }
+
+
+
+/* DIVISÃO  *OU* */
+.ou{
+    display: flex;
+    align-items: center;
+    /*Aplica espaço entre itens e não ao redor
+    deles */
+    gap: 10px;
+    margin-bottom: 25px;
+    /*Define um peso para a fonte 
+    e deixa o texto em negrito*/
+    font-weight: bold;
+}
+
+.ou span{
+    /*Compartilha o espaço entre elementos
+    igualmente*/
+    flex : 1;
+    height: 2px;
+    background: #ffffff66;
+}
+
+
+/*Formulario*/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label{
+    font-size:  15px;
+    margin-bottom: 5px;
+}
+
+form input{
+    background-color: #ececec;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/*Botão cadastrar*/
+
+.btn-cadastrar{
+    /*cor de fundo*/
+    background-color: #402c63;
+    border: none;
+    /*espaçamento*/
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    /*quando mause passa parece que clica*/
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cadastrar:hover{
+    background-color: #5b3d94;
+}
+
+
+/*Circulo decorativo*/
+.circulo{
+    position: absolute;
+    right:-150px;
+    bottom: -50px;
+    width: 600px;
+    height: 600px;
+    background:  #2b1558;
+    border-radius: 50%;
+    opacity:0.8;
+
+}
